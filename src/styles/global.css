@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,5 +17,20 @@
 
   body {
     font-family: "Open Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 border-2 border-primary transition font-semibold inline-block;
+    min-width: 160px;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-transparent hover:text-primary
+  }
+
+  .btn-secondary {
+    @apply bg-white text-primary hover:bg-primary hover:text-white
   }
 }

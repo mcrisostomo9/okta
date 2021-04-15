@@ -15,10 +15,11 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/open-sans": "^4.2.2",
     "autoprefixer": "^10.2.5",
+    "classnames": "^2.3.1",
     "gatsby": "^3.2.1",
     "gatsby-plugin-postcss": "^4.3.0",
+    "gatsby-source-graphql": "^3.3.0",
     "postcss": "^8.2.10",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

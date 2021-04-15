@@ -1,0 +1,88 @@
+.root {
+  @apply relative flex flex-col;
+  min-height: 700px;
+  background: rgb(171, 213, 214);
+  background: linear-gradient(0deg, rgba(171, 213, 214, .5) 15%, rgba(252, 232, 197, 1) 15%);
+
+}
+
+.contentContainer {
+  @apply px-4 py-16 xl:py-24 max-w-screen-xl m-auto grid grid-cols-1 md:grid-cols-2 h-full;
+}
+
+.textContainer {
+  max-width: 450px;
+}
+
+.logoStyle {
+  max-width: 280px;
+}
+
+.logoBorder {
+  @apply w-full mt-4 lg:mt-8;
+  border-color: #B07700;
+  border-top-width: 6px;
+}
+
+.heroText {
+  @apply text-primary font-semibold mt-6 lg:mt-12 leading-tight;
+  font-size: 1.25rem;
+}
+
+.heroImgContainer {
+  @apply relative opacity-50;
+  height: 50vh;
+}
+
+@screen md {
+  .root {
+    background: rgba(252, 232, 197, 1);
+  }
+
+  .logoStyle {
+    max-width: 600px;
+  }
+
+  .logoStyle img {
+    max-width: 450px;
+  }
+
+  .heroImgContainer {
+    @apply absolute top-0 right-0 bottom-0 opacity-100;
+    height: 100%;
+    width: 40%;
+    background: transparent;
+  }
+
+  .heroImgContainer::before {
+    @apply absolute top-0 left-0 bottom-0 z-20;
+    content: "";
+    width: 67%;
+    background: rgba(252, 232, 197, .5);
+  }
+
+  .heroImgContainer::after {
+    @apply absolute top-0 right-0 bottom-0 z-0;
+    content: "";
+    width: 33%;
+    background: rgba(255, 255, 255, 1);
+  }
+}
+
+@screen lg {
+  .textContainer {
+    max-width: 600px;
+  }
+
+  .heroText {
+    font-size: 2rem;
+  }
+
+}
+
+@screen xl {
+  .heroText {
+    font-size: 3rem;
+  }
+}
+
