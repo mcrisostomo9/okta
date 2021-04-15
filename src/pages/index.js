@@ -158,6 +158,7 @@ const IndexPage = () => {
               not sure if that was a requirement or not but did not want to
               spend too much time given the limit
             </li>
+            <li>File can be found in src/utils/utilities.js</li>
           </ul>
         </div>
       </div>
@@ -193,6 +194,7 @@ const IndexPage = () => {
               an ordered map, my JS function makes the assumption that it will
               receive an array of JS objects.
             </li>
+            <li>File can be found in src/utils/validation.js</li>
           </ul>
         </div>
       </div>
