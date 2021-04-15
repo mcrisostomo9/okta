@@ -1,4 +1,4 @@
-function uniqueNames(names1: string[], names2: string[]): string[] {
+function uniqueNames(names1, names2) {
   // Merge both arrays first
   const mergedArr = [...names1, ...names2];
 

@@ -10,8 +10,10 @@ const TestHomepage = () => {
 
   return (
     <div className="relative">
-      <Hero setLoginOpen={setLoginOpen} setRegisterOpen={setRegisterOpen} />
-      <WhyAttend />
+      <div className="relative z-10">
+        <Hero setLoginOpen={setLoginOpen} setRegisterOpen={setRegisterOpen} />
+        <WhyAttend />
+      </div>
       <Modal
         isModalOpen={modalState.isModalOpen}
         modalContent={modalState.modalContent}

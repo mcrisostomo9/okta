@@ -1,5 +1,5 @@
 .root{
-  @apply fixed top-0 right-0 left-0 bottom-0 justify-center items-center;
+  @apply fixed top-0 right-0 left-0 bottom-0 justify-center items-center transition-opacity duration-300;
   background: rgba(0,0,0,.75);
 }
 
@@ -9,7 +9,7 @@
 }
 
 .modalContentStyle {
-  @apply flex flex-col bg-white w-full h-full md:h-auto px-12 pb-12 pt-6 md:max-w-screen-md;
+  @apply flex flex-col bg-white w-full h-full md:h-auto px-12 pb-12 pt-6 md:max-w-screen-md rounded;
 }
 
 .ctaGrid {

@@ -29,10 +29,19 @@ const Modal = ({ isModalOpen, modalContent, setModalClose }) => {
       className={classNames(
         root,
         { "opacity-100 flex z-50": isModalOpen },
-        { "opacity-0 z-0 hidden": !isModalOpen }
+        { "opacity-0 z-0": !isModalOpen }
       )}
     >
-      <div ref={ref} className={modalContentStyle}>
+      <div
+        ref={ref}
+        className={classNames(
+          modalContentStyle,
+          {
+            "opacity-0 z-0": !isModalOpen,
+          },
+          { "opacity-100 flex z-50": isModalOpen }
+        )}
+      >
         <a className={closeButton} onClick={setModalClose} />
         <div className="mt-12 md:mt-6">
           <img className={logo} src={logoSvg} alt="Oktane21 logo" />
